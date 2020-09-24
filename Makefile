@@ -9,7 +9,6 @@ CXXFLAGS= $(CXXVERSION) -g
 GMOCK_GITLAB = /usr/src/gmock/gmock-all.cc
 GMOCK_LOCAL = -lgmock
 LINKFLAGS= -lgtest -lpthread $(GMOCK_GITLAB)
-LINKFLAGS_LOCAL= -lgtest -lpthread $(GMOCK_LOCAL)
 
 # Directories
 SRC_DIR = src
@@ -37,10 +36,6 @@ $(GTEST): $(GTEST_DIR) $(SRC_DIR)
 	$(CXX) $(CXXFLAGS) -o $(GTEST) $(INCLUDE) \
 	$(GTEST_DIR)/*.cpp $(SRC_DIR)/*.cpp $(LINKFLAGS)
 
-$(GTEST)-local: $(GTEST_DIR) $(SRC_DIR)
-	$(CXX) $(CXXFLAGS) -o $(GTEST) $(INCLUDE) \
-	$(GTEST_DIR)/*.cpp $(SRC_DIR)/*.cpp $(LINKFLAGS_LOCAL)
-
 # Perform only unit tests - use locally if gtest/gmock installed
 .PHONY: tests
-tests: $(GTEST)-local
+tests: $(GTEST)
