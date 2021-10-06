@@ -1,4 +1,9 @@
+build:
+   stage: build
+   script:
+      - make tests
+
 test:
    stage: test
    script:
-      - make tests
+      - test_house
