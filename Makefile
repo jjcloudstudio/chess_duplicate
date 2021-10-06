@@ -6,9 +6,8 @@ GTEST = test_$(APP)
 CXX=g++
 CXXVERSION= -std=c++11
 CXXFLAGS= $(CXXVERSION) -g
-GMOCK_GITLAB = /usr/src/gmock/gmock-all.cc
-GMOCK_LOCAL = -lgmock
-LINKFLAGS= -lgtest -lpthread $(GMOCK_GITLAB)
+GMOCK = -lgmock
+LINKFLAGS= -lgtest -lpthread $(GMOCK)
 
 # Directories
 SRC_DIR = src
