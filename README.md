@@ -9,7 +9,7 @@ This exercise is intended to give you some experience with creating mocks using 
 1. Create a local clone of your repo.
 1. Create a test case that:
 	* Mocks the Door
-	* Creates a House with the mocked Door
+	* Creates a House that uses the mocked Door
 	* Verifies the following about the dogOut() method:
 	    * The door is only unlocked, opened, closed, and locked once respectively.
 		* A door is unlocked before it is opened.
