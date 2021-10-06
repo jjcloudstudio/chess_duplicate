@@ -1,7 +1,10 @@
-build:
+buildTests:
    stage: build
    script:
       - make tests
+   artifacts:
+      paths:
+         - test_house
 
 test:
    stage: test
