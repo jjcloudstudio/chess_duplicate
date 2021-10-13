@@ -1,6 +1,6 @@
 # Mocking
 This exercise is intended to give you some experience with creating mocks using Gmock.
-
+//a
 # Instructions
 1. Fork the project at http://gitlab.cs.uleth.ca/course3720/lecture-exercises/mocking
     * The project contains two classes:
@@ -23,4 +23,4 @@ This exercise is intended to give you some experience with creating mocks using 
 
 # Notes
 1. You may want to look at the Warehouse example at http://gitlab.cs.uleth.ca/course3720/examples/Examples/WarehouseMock
-1. The `test` branch contains a solution that you can refer to if you get really stuck and need extra help. But try your best to figure this out on your own - you'll learn more that way. 
+1. The `test` branch contains a solution that you can refer to if you get really stuck and need extra help. But try your best to figure this out on your own - you'll learn more that way.
