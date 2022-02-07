@@ -4,6 +4,7 @@
 
 using ::testing::Expectation;
 using ::testing::Return;
+using ::testing::_;
 
 class MockDoor : public Door
 {
